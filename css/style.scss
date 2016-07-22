@@ -1,0 +1,40 @@
+@import 'normalize';
+
+$green: #659D32;
+
+$font: garamond, 'sans-serif';
+
+$yellow: #ffcc00;
+$bg: #cc4567;
+
+@mixin box {
+  border: 3px solid $bg;
+  padding: 15px;
+  width: 200px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  color: $green;
+}
+
+h2 {
+  color: $green;
+  font-family: $font;
+}
+
+h3 {
+  color: $yellow;
+  background-color: $bg;
+}
+
+.box {
+  @include box;
+}
+
+h5 {
+  @include box;
+  color: white;
+  background-color: $green;
+}

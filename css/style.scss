@@ -1,40 +1,62 @@
 @import 'normalize';
+@import 'text';
+@import 'nav';
+@import 'header';
 
-$green: #659D32;
+@mixin verticalcenter {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%);
+}
 
-$font: garamond, 'sans-serif';
+body{
+  background-color: #f2f2f2;
+}
 
-$yellow: #ffcc00;
-$bg: #cc4567;
+.ourpledge {
+  @include container;
+  background-color: $blue;
+  height: 300px;
 
-@mixin box {
-  border: 3px solid $bg;
-  padding: 15px;
-  width: 200px;
-  text-transform: uppercase;
+  h2, p{
+    color: white;
+    text-align: center;
+  }
+
+}
+
+.pledgecontent {
+  @include verticalcenter;
+}
+
+.mainbody {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 30px;
   text-align: center;
+
+  article {
+    width: 20.6%;
+    display: inline-block;
+    background-color: white;
+    vertical-align: top;
+    margin: 30px 1%;
+    padding: 1%;
+    padding-top: 30px;
+    height: 300px;
+  }
 }
 
-h1 {
-  color: $green;
+footer{
+  border-top: 1px solid gray;
+  padding-top: 20px;
+
+  p {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    color: $blue;
+  }
 }
 
-h2 {
-  color: $green;
-  font-family: $font;
-}
-
-h3 {
-  color: $yellow;
-  background-color: $bg;
-}
-
-.box {
-  @include box;
-}
-
-h5 {
-  @include box;
-  color: white;
-  background-color: $green;
-}
+@import 'media';

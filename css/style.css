@@ -364,31 +364,178 @@ textarea {
   font: inherit;
   /* 2 */ }
 
+.fa {
+  font-size: 30px;
+  border: 1px solid #305291;
+  color: #305291;
+  padding: 10px;
+  border-radius: 50%;
+  width: 30px; }
+
+.fa:hover {
+  background-color: #305291;
+  color: white; }
+
+h1, h2, h3 {
+  color: #305291;
+  text-transform: uppercase; }
+
 h1 {
-  color: #659D32; }
+  font-size: 40px; }
 
-h2 {
-  color: #659D32;
-  font-family: garamond, "sans-serif"; }
+p {
+  color: #666666;
+  line-height: 2em; }
 
-h3 {
-  color: #ffcc00;
-  background-color: #cc4567; }
+.logo {
+  height: 75px;
+  float: left; }
 
-.box {
-  border: 3px solid #cc4567;
-  padding: 15px;
-  width: 200px;
-  text-transform: uppercase;
+.menu {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  float: right; }
+  .menu ul {
+    position: absolute;
+    list-style-type: none;
+    left: -9999px;
+    top: -9999px; }
+  .menu li {
+    float: left; }
+  .menu a {
+    padding: 9px 20px;
+    display: block;
+    color: white;
+    text-decoration: none; }
+
+.menu {
+  float: right; }
+  .menu li {
+    display: inline; }
+  .menu a {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    color: white;
+    text-decoration: none; }
+  .menu a:hover {
+    background-color: #305291;
+    border: 1px solid #305291; }
+
+.dropdown {
+  position: relative; }
+
+.dropdown:after {
+  content: "\25BC";
+  font-size: .5em;
+  display: block;
+  position: absolute;
+  top: 38%;
+  right: 12%; }
+
+.drop-nav,
+.flyout-nav {
+  position: absolute;
+  display: none; }
+
+.drop-nav li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+
+.dropdown:hover > .drop-nav {
+  display: block; }
+
+.dropdown-content a:hover {
+  color: white; }
+
+/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+header {
+  height: 500px;
+  position: relative; }
+
+video {
+  bottom: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -100;
+  height: auto;
+  width: 100%; }
+
+.container {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px; }
+
+.headercontent {
+  clear: both;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center; }
+  .headercontent p {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase; }
 
-h5 {
-  border: 3px solid #cc4567;
-  padding: 15px;
-  width: 200px;
-  text-transform: uppercase;
-  text-align: center;
-  color: white;
-  background-color: #659D32; }
+body {
+  background-color: #f2f2f2; }
+
+.ourpledge {
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 20px;
+  background-color: #305291;
+  height: 300px; }
+  .ourpledge h2, .ourpledge p {
+    color: white;
+    text-align: center; }
+
+.pledgecontent {
+  position: relative;
+  top: 40%;
+  transform: translateY(-50%); }
+
+.mainbody {
+  margin-left: 15%;
+  margin-right: 15%;
+  padding: 30px;
+  text-align: center; }
+  .mainbody article {
+    width: 20.6%;
+    display: inline-block;
+    background-color: white;
+    vertical-align: top;
+    margin: 30px 1%;
+    padding: 1%;
+    padding-top: 30px;
+    height: 300px; }
+
+footer {
+  border-top: 1px solid gray;
+  padding-top: 20px; }
+  footer p {
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    color: #305291; }
+
+@media (max-width: 767px) {
+  video {
+    width: auto; }
+
+  .ourpledge, .container {
+    padding: 10px; }
+
+  .mainbody {
+    margin: 0px; }
+
+  .mainbody article {
+    width: 100%;
+    display: block; }
+
+  footer p {
+    width: 100%;
+    display: block; } }
 
 /*# sourceMappingURL=style.css.map */

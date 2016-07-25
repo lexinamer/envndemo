@@ -4,120 +4,107 @@
 }
 
 .menu {
-  padding: 0;
+  display: inline;
   margin: 0;
-  list-style-type: none;
-  float: right;
-
-  ul{
-    position: absolute;
-    list-style-type: none;
-    left:-9999px;
-    top: -9999px;
-  }
-
-  li{
-    float: left;
-  }
-
-    a{
-      padding: 9px 20px;
-      display: block;
-      color: white;
-      text-decoration: none;
-    }
-}
-
-.menu {
+  padding: 10px;
+  list-style: none;
   float: right;
 
   li {
-    display: inline;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    height: 50px;
   }
 
-    a {
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid white;
-      color: white;
-      text-decoration: none;
-    }
+  a {
+    text-decoration: none;
+    color: $blue;
+    padding: 10px;
+    background-color: white;
+  }
 
-    a:hover {
-      background-color: $blue;
-      border: 1px solid $blue;
-    }
+  li a:hover {
+    background-color: $blue;
+    color: white;
+  }
 }
 
-.dropdown {
-  position: relative;
-}
-.dropdown:after {
-  content: "\25BC";
-  font-size: .5em;
-  display: block;
+.drop-nav {
+  padding: 0;
   position: absolute;
-  top: 38%;
-  right: 12%;
-}
-.drop-nav,
-.flyout-nav {
-  position: absolute;
+  top: 40px;
+  left: 0;
   display: none;
+
+  li {
+    width: 200px;
+    display: block;
+    color: white;
+  }
 }
-.drop-nav li {
-  border-bottom: 1px solid rgba(255,255,255,.2);
-}
-.dropdown:hover > .drop-nav {
+
+.dropdown:hover .drop-nav {
   display: block;
 }
 
 
+//
+// ul li:hover ul {
+//   display: block;
+//   opacity: 1;
+//   visibility: visible;
+// }
 
-
-
-// ul {
+// .menu {
+//   padding: 0;
+//   margin: 0;
+//   list-style-type: none;
 //   float: right;
-//   display: inline;
 //
-//   li {
-//   display: inline-block;
-//   padding: 10px;
-//   margin: 5px;
-//   border: 1px solid white;
-//   }
-//
-//   a {
-//     text-decoration: none;
-//     color: white;
-//     width: 150px;
-//   }
-//
-//   a:hover {
-//     background-color: $blue;
-//     border: 1px solid $blue;
-//   }
-// }
-//
-// .dropdown-content {
-//     display: none;
+//   ul{
 //     position: absolute;
-//     background-color: white;
-//     margin-top: 15px;
-//     z-index: 100;
+//     list-style-type: none;
+//     left:-9999px;
+//     top: -9999px;
+//   }
+//
+//   li{
+//     float: left;
+//   }
+//
+//     a{
+//       padding: 9px 20px;
+//       display: block;
+//       color: white;
+//       text-decoration: none;
+//     }
 // }
 //
-// .dropdown-content a {
-//     display: block;
-//     color: black;
-//     border-bottom: 1px solid gray;
+// ul li:hover {
+//   background: #555;
+//   color: #fff;
 // }
 //
-
+// ul li ul {
+//   padding: 0;
+//   position: absolute;
+//   top: 48px;
+//   left: 0;
+//   width: 150px;
+//   display: none;
+// }
 //
-.dropdown-content a:hover {
-  color: white;
-}
-
-
-/* CSSTerm.com Simple Horizontal DropDown CSS menu */
+// ul li ul li {
+//   background: #555;
+//   display: block;
+//   color: #fff;
+// }
+//
+// ul li ul li:hover {
+//   background: #666;
+// }
+//
+// ul li:hover ul {
+//   display: block;
+// }

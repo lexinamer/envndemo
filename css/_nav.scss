@@ -3,108 +3,49 @@
   float: left;
 }
 
-.menu {
-  display: inline;
-  margin: 0;
-  padding: 10px;
+ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 100;
+}
+
+.main-nav {
   float: right;
 
   li {
-    display: inline-block;
-    position: relative;
-    cursor: pointer;
-    height: 50px;
-  }
+    float: left;
+    margin: 10px;
 
-  a {
-    text-decoration: none;
-    color: $blue;
-    padding: 10px;
-    background-color: white;
-  }
+    a {
+      color: $blue;
+      display: block;
+      padding: 15px;
+      text-decoration: none;
+      background-color: white;
+      }
 
-  li a:hover {
-    background-color: $blue;
-    color: white;
-  }
-}
-
-.drop-nav {
-  padding: 0;
-  position: absolute;
-  top: 40px;
-  left: 0;
-  display: none;
-
-  li {
-    width: 200px;
-    display: block;
-    color: white;
+    a:hover {
+      color: white;
+      background-color: $blue;
+    }
   }
 }
 
-.dropdown:hover .drop-nav {
-  display: block;
+.dropdown {
+  position: relative;
+
+  .drop-nav {
+    position: absolute;
+    display: none;
+
+    li {
+      margin: 0px;
+      width: 150px;
+    }
+  }
 }
 
-
-//
-// ul li:hover ul {
-//   display: block;
-//   opacity: 1;
-//   visibility: visible;
-// }
-
-// .menu {
-//   padding: 0;
-//   margin: 0;
-//   list-style-type: none;
-//   float: right;
-//
-//   ul{
-//     position: absolute;
-//     list-style-type: none;
-//     left:-9999px;
-//     top: -9999px;
-//   }
-//
-//   li{
-//     float: left;
-//   }
-//
-//     a{
-//       padding: 9px 20px;
-//       display: block;
-//       color: white;
-//       text-decoration: none;
-//     }
-// }
-//
-// ul li:hover {
-//   background: #555;
-//   color: #fff;
-// }
-//
-// ul li ul {
-//   padding: 0;
-//   position: absolute;
-//   top: 48px;
-//   left: 0;
-//   width: 150px;
-//   display: none;
-// }
-//
-// ul li ul li {
-//   background: #555;
-//   display: block;
-//   color: #fff;
-// }
-//
-// ul li ul li:hover {
-//   background: #666;
-// }
-//
-// ul li:hover ul {
-//   display: block;
-// }
+.dropdown:hover .drop-nav{
+display: block;
+}
